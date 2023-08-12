@@ -10,8 +10,6 @@ on:
         - reopened
         - closed
         - edited
-    paths:
-      - "*"
 
 jobs:
   generate-coverage-report:
