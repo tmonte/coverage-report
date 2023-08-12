@@ -4,7 +4,10 @@ public class MyClass
 {
     public int MyMethod(string param)
     {
-        Console.WriteLine(param);
-        return 42;
+        return param switch
+        {
+            "hello" => 42,
+            _ => 99
+        };
     }
 }
